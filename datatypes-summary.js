@@ -22,7 +22,7 @@ console.log(BigNumber);
 
 /* Reference (Non-Premative)
 Array, Objects, Functions
-*/
+
 
 const heros=["kamran","mehran","nouman"];
 let myObj={
@@ -34,3 +34,30 @@ const myFunction= function () {
 }
 console.log(myObj);
 console.log(typeof(heros));
+*/
+
+// +++++++++++++++++++++++++++++++++++++ MEmory+++++++++++++++++++++++++++++++++++++++
+/*
+Two types of Memory
+1.Stack=> use by premative types
+2.Heap=>used by non-premative types
+
+
+let myYoutunename="kamrandotcom"
+
+let anothername =myYoutunename
+anothername="Affan"
+
+console.log(anothername);
+console.log(myYoutunename);*/
+
+let userOne={
+    email:"kamran@gmail.com",
+    upi:"user@ybl"
+
+}
+
+let userTwo=userOne;
+userTwo.email="affan@gmail.com";
+console.log(userOne.email)
+console.log(userTwo.email)
