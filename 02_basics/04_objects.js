@@ -81,3 +81,11 @@ const {courseInstructor:instructor}=course;
 // console.log(course.courseInstructor)
 // console.log(courseInstructor)
 console.log(instructor)
+/*
+
+{
+    "name":"kamran",
+    "coursename":"Js in Urdu",
+    "price":"free"
+}
+*/
