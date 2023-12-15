@@ -72,3 +72,12 @@ console.log(Object.entries(tenderUSer));
 console.log(tenderUSer.hasOwnProperty('isLoggedIn'));
 
 */
+const course={
+    course_name:"JS in Urdu",
+    price:"999",
+    courseInstructor:"kamran"
+}
+const {courseInstructor:instructor}=course;
+// console.log(course.courseInstructor)
+// console.log(courseInstructor)
+console.log(instructor)
