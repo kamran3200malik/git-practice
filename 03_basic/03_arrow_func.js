@@ -17,7 +17,7 @@ function chai() {
     console.log(this.username);//this can not be called in function only call in object
 }
 chai()
-*/
+
 let tea={
    a:12,
    b:13,
@@ -26,4 +26,37 @@ let tea={
    } 
 }
 tea.c()
-console.log(this.a);
+
+
+const chai= function () {
+    let username="kamran";
+    console.log(this.username);
+}
+
+const chai=  () => {
+    let username="kamran";
+    console.log(this);
+}
+chai()
+
+// Ist method of arrow function (explict return)
+
+const addTwo=(num1,num2)=>{
+    return num1+num2
+}
+
+console.log(addTwo(45,45))
+
+
+// 2nd method of arrow function 
+const addTwo=(num1,num2)=>num1+num2
+console.log(addTwo(45,45))
+
+
+// 3rd method of arrow function ( implecit return)
+const addTwo=(num1,num2)=>(num1+num2)
+console.log(addTwo(45,45))
+*/
+// using object
+const pakN=()=>({name:"kamran"})
+console.log(pakN());
