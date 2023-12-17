@@ -1,5 +1,5 @@
 /*
-// for of loop is used for arrays and objects
+// for of loop is used for arrays 
 
 const arr=[1, 2, 3, 4, 5]
 for (const num of arr) {
@@ -13,3 +13,12 @@ for (const greet of greeting) {
 }
 */
 // Maps
+const map= new Map();
+map.set('PK','Pakistan')
+map.set('KSA','Kingdom of Suadi Arbia')
+map.set('UAE','Dubai')
+
+// console.log(map);
+for (const [key, value] of map) {
+    console.log(key ,":- ", value);
+}
