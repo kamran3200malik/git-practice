@@ -23,4 +23,22 @@ const emptyObj={}
 if (Object.keys(emptyObj).length ===0) {
     console.log("Object is Empty");
 }
+
+
+
+// Nullish Coalescing Operator (??): null and undefined
+
+let val1;
+// val1= 5 ?? 10;
+// val1= null ?? 10;
+// val1=undefined ?? 15
+val1=null ?? 10 ?? 20 // first value will assign
+
+console.log(val1);
 */
+
+// +++++++++++++++++++++++++++ TErniary Operator++++++++++++
+// condition ? true :false
+
+const icePrice=100
+icePrice<=80 ? console.log("Less than 80") : console.log("More than 80");
