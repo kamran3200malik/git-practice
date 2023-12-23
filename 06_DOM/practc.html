@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 practice</title>
+</head>
+<body style="background-color: dimgrey; color: dodgerblue;">
+    
+</body>
+
+<script>
+    const div= document.createElement("div")
+    console.log(div);
+    div.className="main"
+    div.id=Math.round(Math.random()*10+1)
+    div.setAttribute("title","kamran")
+    // div.setAttribute("class","kamran")
+    div.style.backgroundColor="green"
+    div.style.padding="15px"
+    div.style.borderRadius="20px"
+    // div.innerHTML="Kamran Malik"
+    const kam=document.createTextNode("Kamran Malik  ")
+    div.appendChild(kam)
+    document.body.appendChild(div)
+
+
+    const aff=document.createTextNode("Affan Malik")
+    div.appendChild(aff)
+    document.body.appendChild(div)
+
+
+</script>
+
+
+
+</html>
