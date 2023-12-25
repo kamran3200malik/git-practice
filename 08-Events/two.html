@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set timeout</title>
+</head>
+<body>
+    <h1>Kamran is a good boy</h1>
+    <button id="start" type="button" class="btn btn-primary">Start</button>
+    <button id="stop" type="button" class="btn btn-danger">Stop</button>
+    <h2 id="add"></h2>
+</body>
+<script>
+    /*
+    setTimeout(function () {
+        console.log("Affan");
+    },4000)
+
+
+    setInterval(() => {
+        console.log("kamran");
+    }, 12345);
+    
+    
+    const hi=function(){
+        console.log("Affan Khan");
+    }
+
+    const chngeh1=function(){
+        document.querySelector('h1').innerHTML="Affan and Farhan are brothers"
+    }
+
+     const chngtxt=  setTimeout(chngeh1, 1000);
+
+     document.querySelector('#stop').addEventListener('click',function () {
+        clearTimeout(chngtxt) 
+        console.log("stopped");
+         
+     })
+    setTimeout(hi, 1000);
+
+
+*/
+let intrvlid;
+let counter = 1;
+const hi = function() {
+  console.log('kamran');
+  const newContent = `${counter}. Added kamran <br> `;
+  add.insertAdjacentHTML('beforeend', newContent);
+  counter++;
+};
+
+const add =document.querySelector('#add')
+const start=document.querySelector('#start')
+start.addEventListener('click',function () {
+     intrvlid= setInterval(hi, 1000);
+        
+})
+
+const stop=document.querySelector('#stop')
+stop.addEventListener('click',function () {
+
+    clearInterval(intrvlid);
+    console.log("stopped");
+
+
+})
+
+
+
+
+
+</script>
+</html>
